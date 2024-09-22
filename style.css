@@ -1,0 +1,554 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.btn {
+  background-color: rgb(68, 71, 209);
+  padding: 5px 25px;
+  border-radius: 2px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Josefin Sans';
+  transition: all 0.2s linear;
+}
+
+.btn:hover {
+  background-color: rgba(63, 96, 204, 0.795);
+}
+
+
+/* style setting */
+
+main {
+  background-color: white;
+  width: 100%;
+  font-family: "Ysabeau Infant";
+}
+
+.main-center {
+  padding: 2rem;
+}
+
+header {
+  background-color: #f0efb4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 20px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.img-header-1,
+.img-header-2 {
+  width: 300px;
+}
+
+
+header h3 {
+  margin-top: 2rem;
+  color: #313131;
+}
+
+header h1 {
+  font-family: "Bricolage Grotesque";
+  color: #4e4d13;
+  font-size: 5rem;
+}
+
+.title-logo {
+  display: flex;
+  align-items: center;
+  gap: 0 6px;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+}
+
+.title-logo h2 {
+  font-size: 20px;
+  margin-top: 0.5rem;
+  color: #020202;
+  font-weight: 600;
+  font-family: "Bricolage Grotesque";
+}
+
+
+.connect-btn {
+  background-color: transparent;
+  border-bottom: 1px solid rgb(9, 83, 126);
+  color: #77700e;
+  padding: 0;
+  font-family: "Bricolage Grotesque";
+  font-weight: bold;
+  position: absolute;
+  bottom: 12%;
+  right: 5%;
+}
+
+.connect-btn:hover {
+  background: transparent;
+  color: #bdbb49;
+  margin-bottom: 5px;
+}
+
+.section-1 {
+  padding: 3rem 2rem;
+}
+
+
+.section-content-1 h1 {
+  width: 70%;
+  font-size: 4rem;
+}
+
+.section-underline {
+  height: 10px;
+  width: 15%;
+  background-color: #050505;
+}
+
+.section-content-11 {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 1rem;
+}
+
+.section-content-1 p {
+  font-size: 1.25rem;
+  margin: 2rem 0;
+}
+
+
+.main-img {
+  width: 40%;
+}
+
+footer {
+  background-color: #141414;
+  color: white;
+  padding: 2rem 3rem;
+}
+
+.footer-content h1 {
+  font-family: Ysabeau Infant;
+}
+
+.footer-content p {
+  font-size: 1.15rem;
+  font-family: "Bricolage Grotesque";
+  padding: 1.75rem 0;
+}
+
+.www {
+  color: #d8d529;
+}
+
+.footer-underline {
+  height: 2px;
+  background-color: #c7c5c5;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.media-list {
+  display: flex;
+  gap: 10px;
+}
+
+.media-list li a {
+  font-size: 2rem;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 6px 10px;
+  transition: all 0.2s linear;
+}
+
+.media-list li a:hover {
+  background-color: #94923a;
+}
+
+.footer-content-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.links-list {
+  display: flex;
+  gap: 0 1rem;
+}
+
+.links-list li a {
+  color: white;
+  font-family: "Bricolage Grotesque";
+  transition: all 0.2s linear;
+}
+
+.links-list li a:hover {
+  color: #94923a;
+}
+
+.footer-content-12 {
+  display: flex;
+  align-items: center;
+}
+
+.footer-content-12 p {
+  font-size: 18px;
+  margin: 0 0.5rem;
+  color: #94923a;
+  font-weight: 300;
+  font-family: "Bricolage Grotesque";
+
+}
+
+.logo {
+  width: 60px;
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width: 1160px) {
+  .section-content-1 h1 {
+    width: 70%;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 968px) {
+
+  .img-header-1,
+  .img-header-2 {
+    width: 230px;
+  }
+
+  header h3 {
+    margin-top: 1.875rem;
+  }
+
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+  .section-content-1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-content-1 p {
+    font-size: 1.15rem;
+    margin: 1.5rem 0;
+  }
+
+  .main-center {
+    padding: 1rem;
+  }
+
+  .footer-content h1 {
+    font-size: 3rem;
+  }
+
+  .footer-content p {
+    font-size: 1rem;
+    padding: 1.75rem 0;
+  }
+
+  .media-list li a {
+    font-size: 1.45rem;
+    padding: 4px 8px;
+  }
+
+  .footer-content-12 p {
+    font-size: 16px;
+  }
+
+  .links-list li a {
+    font-size: 14px;
+  }
+
+  .footer-content-1 {
+    margin: 0;
+  }
+
+  footer {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .img-header-1,
+  .img-header-2 {
+    width: 180px;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+  .title-logo h2 {
+    font-size: 16px;
+    margin-top: 0.5rem;
+  }
+  .connect-btn{
+    font-size: 14px;
+  }
+  .section-1 {
+    padding: 3rem 2rem;
+  }
+
+  .section-content-1 h1 {
+    font-size: 2rem;
+  }
+  .section-underline{
+    width: 30%;
+    height: 8px;
+  }
+  
+  .section-content-1 p {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .footer-content h1 {
+    font-size: 2.45rem;
+  }
+
+  .footer-content p {
+    font-size: 0.85rem;
+    padding: 0;
+  }
+
+  .media-list li a {
+    font-size: 1.15rem;
+    padding: 4px 8px;
+  }
+
+  .footer-content-12 p {
+    font-size: 12px;
+  }
+  .links-list li a {
+    font-size: 12px;
+  }
+  .logo{
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .img-header-1,
+  .img-header-2 {
+    width: 140px;
+  }
+  .main-img {
+    width: 50%;
+  }
+  header h3 {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  .title-logo h2 {
+    font-size: 12px;
+    margin-top: 0.75rem;
+  }
+  .section-content-1 h1 {
+    font-size: 1.75rem;
+  }
+  .section-underline{
+    width: 25%;
+    height: 5px;
+  }
+  
+  .section-content-1 p {
+    font-size: 0.95rem;
+    margin: 1rem 0;
+  }
+  
+  footer {
+    padding: 0.785rem 1.45rem;
+  }
+  .footer-content h1 {
+    font-size: 2rem;
+  }
+
+  .footer-content p {
+    font-size: 0.5rem;
+    padding: 0;
+  }
+  .media-list li a {
+    font-size: 1rem;
+  }
+
+  .footer-content-12 p {
+    font-size: 10px;
+  }
+  .links-list li a {
+    font-size: 10px;
+  }
+  .logo{
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .img-header-1,
+  .img-header-2 {
+    width: 120px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+  header h3 {
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+  }
+
+  .connect-btn{
+    font-size: 12px;
+  }
+  .section-1 {
+    padding: 1.785rem 1.785rem;
+  }
+  .section-content-1 h1 {
+    font-size: 1.65rem;
+  }
+  .section-underline{
+    width: 25%;
+    height: 5px;
+  }
+  
+  .section-content-1 p {
+    font-size: 0.65rem;
+    margin: 0.4rem 0;
+  }
+  
+  footer {
+    padding: 0.75rem 1rem;
+  }
+  .footer-content h1 {
+    font-size: 1.65rem;
+  }
+  .media-list li a {
+    font-size: 0.85em;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .img-header-1,
+  .img-header-2 {
+    width: 90px;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+  }
+  header h3 {
+    font-size: 0.75rem;
+    margin-top: 1.5rem;
+  }
+  .section-1 {
+    padding: 2rem 1.5rem;
+  }
+  .section-content-1 h1 {
+    font-size: 1rem;
+  }
+  .section-content-1 p {
+    font-size: 8px;
+    margin: 0.4rem 0;
+  }
+  .footer-content h1 {
+    font-size: 1rem;
+  }
+}
